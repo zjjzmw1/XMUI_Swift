@@ -18,6 +18,7 @@
 		E5D4CB7928643732007C0B3E /* UIView+XMAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB7828643732007C0B3E /* UIView+XMAnimation.swift */; };
 		E5D4CB7B28643822007C0B3E /* UIView+XMBlast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB7A28643822007C0B3E /* UIView+XMBlast.swift */; };
 		E5D4CB7D28643887007C0B3E /* XMSBlastImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D4CB7C28643887007C0B3E /* XMSBlastImage.xcassets */; };
+		E5D4CB81286438DD007C0B3E /* UITableView+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB80286438DD007C0B3E /* UITableView+XMTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E5D4CB7828643732007C0B3E /* UIView+XMAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XMAnimation.swift"; sourceTree = "<group>"; };
 		E5D4CB7A28643822007C0B3E /* UIView+XMBlast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XMBlast.swift"; sourceTree = "<group>"; };
 		E5D4CB7C28643887007C0B3E /* XMSBlastImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XMSBlastImage.xcassets; sourceTree = "<group>"; };
+		E5D4CB80286438DD007C0B3E /* UITableView+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+XMTool.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		E5D4CB6C28641178007C0B3E /* XMUITool */ = {
 			isa = PBXGroup;
 			children = (
+				E5D4CB7F286438CB007C0B3E /* UITableView */,
 				E5D4CB752864360C007C0B3E /* UIImage */,
 				E5D4CB7028641543007C0B3E /* UIView */,
 				E5D4CB6D28641193007C0B3E /* String */,
@@ -120,6 +123,14 @@
 				E5D4CB7C28643887007C0B3E /* XMSBlastImage.xcassets */,
 			);
 			path = XMBlast;
+			sourceTree = "<group>";
+		};
+		E5D4CB7F286438CB007C0B3E /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4CB80286438DD007C0B3E /* UITableView+XMTool.swift */,
+			);
+			path = UITableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				E5D4CB7228641557007C0B3E /* UIView+XMTool.swift in Sources */,
 				E5D4CB6F28641208007C0B3E /* String+XMTool.swift in Sources */,
 				E5D4CB7428643556007C0B3E /* UIView+XMFrame.swift in Sources */,
+				E5D4CB81286438DD007C0B3E /* UITableView+XMTool.swift in Sources */,
 				E5D4CB7B28643822007C0B3E /* UIView+XMBlast.swift in Sources */,
 				E5D4CB5928640EC1007C0B3E /* AppDelegate.swift in Sources */,
 			);
