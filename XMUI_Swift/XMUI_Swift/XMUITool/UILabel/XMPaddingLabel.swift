@@ -2,7 +2,7 @@
 //  XMPaddingLabel.swift
 //  XMUI_Swift
 //
-//  Created by ext.zhangmingwei1 on 2022/6/23.
+//  Created by 张明炜 on 2022/6/23.
 //
 
 import UIKit
