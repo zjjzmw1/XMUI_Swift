@@ -18,6 +18,7 @@ extension UITableView {
         } else {
             tableV = UITableView.init(frame: frame, style: .plain)
         }
+        tableV.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         tableV.separatorStyle = .none // 默认隐藏横线
 //        tableV.separatorColor = UIColor.lightGray
         //        tableView.separatorStyle = .singleLine

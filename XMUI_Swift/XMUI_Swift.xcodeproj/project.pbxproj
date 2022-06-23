@@ -27,6 +27,7 @@
 		E5D4CB922864460A007C0B3E /* UIScrollView+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB912864460A007C0B3E /* UIScrollView+XMTool.swift */; };
 		E5D4CB94286446B5007C0B3E /* XMToolMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB93286446B5007C0B3E /* XMToolMacro.swift */; };
 		E5D4CB97286447E7007C0B3E /* CLLocation+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB96286447E7007C0B3E /* CLLocation+XMTool.swift */; };
+		E5D4CB9D28644C8E007C0B3E /* DemoLabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB9C28644C8E007C0B3E /* DemoLabelVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		E5D4CB912864460A007C0B3E /* UIScrollView+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+XMTool.swift"; sourceTree = "<group>"; };
 		E5D4CB93286446B5007C0B3E /* XMToolMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMToolMacro.swift; sourceTree = "<group>"; };
 		E5D4CB96286447E7007C0B3E /* CLLocation+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+XMTool.swift"; sourceTree = "<group>"; };
+		E5D4CB9C28644C8E007C0B3E /* DemoLabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLabelVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				E5D4CB5828640EC1007C0B3E /* AppDelegate.swift */,
 				E5D4CB5C28640EC1007C0B3E /* ViewController.swift */,
+				E5D4CB9828644C54007C0B3E /* DemoVC */,
 				E5D4CB6C28641178007C0B3E /* XMUITool */,
 				E5D4CB6128640EC3007C0B3E /* Assets.xcassets */,
 				E5D4CB6328640EC3007C0B3E /* LaunchScreen.storyboard */,
@@ -205,6 +208,22 @@
 			path = CLLocation;
 			sourceTree = "<group>";
 		};
+		E5D4CB9828644C54007C0B3E /* DemoVC */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4CB9928644C61007C0B3E /* UILabel */,
+			);
+			path = DemoVC;
+			sourceTree = "<group>";
+		};
+		E5D4CB9928644C61007C0B3E /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4CB9C28644C8E007C0B3E /* DemoLabelVC.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,6 +297,7 @@
 			files = (
 				E5D4CB772864363D007C0B3E /* UIImage+XMTool.swift in Sources */,
 				E5D4CB94286446B5007C0B3E /* XMToolMacro.swift in Sources */,
+				E5D4CB9D28644C8E007C0B3E /* DemoLabelVC.swift in Sources */,
 				E5D4CB7928643732007C0B3E /* UIView+XMAnimation.swift in Sources */,
 				E5D4CB97286447E7007C0B3E /* CLLocation+XMTool.swift in Sources */,
 				E5D4CB5D28640EC1007C0B3E /* ViewController.swift in Sources */,
