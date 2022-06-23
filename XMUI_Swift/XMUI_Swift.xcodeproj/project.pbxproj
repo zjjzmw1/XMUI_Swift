@@ -15,6 +15,7 @@
 		E5D4CB7228641557007C0B3E /* UIView+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB7128641557007C0B3E /* UIView+XMTool.swift */; };
 		E5D4CB7428643556007C0B3E /* UIView+XMFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB7328643556007C0B3E /* UIView+XMFrame.swift */; };
 		E5D4CB772864363D007C0B3E /* UIImage+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB762864363D007C0B3E /* UIImage+XMTool.swift */; };
+		E5D4CB7928643732007C0B3E /* UIView+XMAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB7828643732007C0B3E /* UIView+XMAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E5D4CB7128641557007C0B3E /* UIView+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XMTool.swift"; sourceTree = "<group>"; };
 		E5D4CB7328643556007C0B3E /* UIView+XMFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XMFrame.swift"; sourceTree = "<group>"; };
 		E5D4CB762864363D007C0B3E /* UIImage+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+XMTool.swift"; sourceTree = "<group>"; };
+		E5D4CB7828643732007C0B3E /* UIView+XMAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XMAnimation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				E5D4CB7128641557007C0B3E /* UIView+XMTool.swift */,
+				E5D4CB7828643732007C0B3E /* UIView+XMAnimation.swift */,
 				E5D4CB7328643556007C0B3E /* UIView+XMFrame.swift */,
 			);
 			path = UIView;
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5D4CB772864363D007C0B3E /* UIImage+XMTool.swift in Sources */,
+				E5D4CB7928643732007C0B3E /* UIView+XMAnimation.swift in Sources */,
 				E5D4CB5D28640EC1007C0B3E /* ViewController.swift in Sources */,
 				E5D4CB7228641557007C0B3E /* UIView+XMTool.swift in Sources */,
 				E5D4CB6F28641208007C0B3E /* String+XMTool.swift in Sources */,
