@@ -63,9 +63,8 @@ extension UIView {
             return (objc_getAssociatedObject(self, &kDragBlast) as? Bool) ?? false
         }
     }
-    /// 是否使用粒子动画 -- 默认为false (两种爆炸效果：粒子爆炸效果，多张图片帧动画爆炸效果)
-    /// 帧动画需要图片。粒子动画不需要图片
-    var isFragment_XMS: Bool {
+    /// 是否是帧动画 「 帧动画需要图片。粒子动画不需要图片，默认是粒子动画」
+    var isFrameAnimation: Bool {
         set {
             objc_setAssociatedObject(self, &kIsFragment, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
@@ -132,7 +131,7 @@ extension UIView {
             tap.view?.isHidden = true
             circle1?.isHidden = true
             originPoint = tap.view?.center ?? CGPoint()
-            if isFragment_XMS { // 粒子动画
+            if isFrameAnimation == false { // 粒子动画
                 self.boomCellsInGesture_XMS(gesture: tap)
             } else { // 图片的帧动画
                 self.aViewBlastEffect_XMS(gesture: tap)
@@ -324,7 +323,7 @@ extension UIView {
             let distance = sqrt(pow(self.originPoint.x - panPoint.x, 2) + pow(self.originPoint.y - panPoint.y, 2))
             if distance > MAXMultiple_XMS*pan.view!.bounds.size.height {
                 pan.view?.isHidden = true
-                if self.isFragment_XMS { // 粒子效果
+                if self.isFrameAnimation == false { // 粒子效果
                     self.boomCellsInGesture_XMS(gesture: pan)
                 } else { // 图片的帧动画
                     self.aViewBlastEffect_XMS(gesture: pan)

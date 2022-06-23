@@ -28,6 +28,7 @@
 		E5D4CB94286446B5007C0B3E /* XMToolMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB93286446B5007C0B3E /* XMToolMacro.swift */; };
 		E5D4CB97286447E7007C0B3E /* CLLocation+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB96286447E7007C0B3E /* CLLocation+XMTool.swift */; };
 		E5D4CB9D28644C8E007C0B3E /* DemoLabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB9C28644C8E007C0B3E /* DemoLabelVC.swift */; };
+		E5D4CBA228645186007C0B3E /* DemoBlastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CBA128645186007C0B3E /* DemoBlastVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		E5D4CB93286446B5007C0B3E /* XMToolMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMToolMacro.swift; sourceTree = "<group>"; };
 		E5D4CB96286447E7007C0B3E /* CLLocation+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+XMTool.swift"; sourceTree = "<group>"; };
 		E5D4CB9C28644C8E007C0B3E /* DemoLabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLabelVC.swift; sourceTree = "<group>"; };
+		E5D4CBA128645186007C0B3E /* DemoBlastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBlastVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		E5D4CB9828644C54007C0B3E /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
+				E5D4CB9E2864514E007C0B3E /* UIView */,
 				E5D4CB9928644C61007C0B3E /* UILabel */,
 			);
 			path = DemoVC;
@@ -222,6 +225,14 @@
 				E5D4CB9C28644C8E007C0B3E /* DemoLabelVC.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		E5D4CB9E2864514E007C0B3E /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4CBA128645186007C0B3E /* DemoBlastVC.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 				E5D4CB8928643FE7007C0B3E /* UIFont+XMTool.swift in Sources */,
 				E5D4CB8F2864455A007C0B3E /* XMNavigationController.swift in Sources */,
 				E5D4CB7B28643822007C0B3E /* UIView+XMBlast.swift in Sources */,
+				E5D4CBA228645186007C0B3E /* DemoBlastVC.swift in Sources */,
 				E5D4CB8C286442E7007C0B3E /* XMPaddingLabel.swift in Sources */,
 				E5D4CB5928640EC1007C0B3E /* AppDelegate.swift in Sources */,
 			);

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         return tableV
     }()
     
-    let dataArr = ["XMPaddingLabel"]
+    let dataArr = ["XMPaddingLabel","DemoBlastVC"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +58,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         if currentStr == "XMPaddingLabel" {
             vc = DemoLabelVC()
+        }
+        if currentStr == "DemoBlastVC" {
+            vc = DemoBlastVC()
         }
 
         self.navigationController?.pushViewController(vc, animated: true)
