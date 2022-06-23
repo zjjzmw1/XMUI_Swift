@@ -16,6 +16,8 @@
 		E5D4CB7428643556007C0B3E /* UIView+XMFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB7328643556007C0B3E /* UIView+XMFrame.swift */; };
 		E5D4CB772864363D007C0B3E /* UIImage+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB762864363D007C0B3E /* UIImage+XMTool.swift */; };
 		E5D4CB7928643732007C0B3E /* UIView+XMAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB7828643732007C0B3E /* UIView+XMAnimation.swift */; };
+		E5D4CB7B28643822007C0B3E /* UIView+XMBlast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB7A28643822007C0B3E /* UIView+XMBlast.swift */; };
+		E5D4CB7D28643887007C0B3E /* XMSBlastImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D4CB7C28643887007C0B3E /* XMSBlastImage.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E5D4CB7328643556007C0B3E /* UIView+XMFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XMFrame.swift"; sourceTree = "<group>"; };
 		E5D4CB762864363D007C0B3E /* UIImage+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+XMTool.swift"; sourceTree = "<group>"; };
 		E5D4CB7828643732007C0B3E /* UIView+XMAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XMAnimation.swift"; sourceTree = "<group>"; };
+		E5D4CB7A28643822007C0B3E /* UIView+XMBlast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XMBlast.swift"; sourceTree = "<group>"; };
+		E5D4CB7C28643887007C0B3E /* XMSBlastImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XMSBlastImage.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				E5D4CB7128641557007C0B3E /* UIView+XMTool.swift */,
 				E5D4CB7828643732007C0B3E /* UIView+XMAnimation.swift */,
 				E5D4CB7328643556007C0B3E /* UIView+XMFrame.swift */,
+				E5D4CB7E28643893007C0B3E /* XMBlast */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -106,6 +111,15 @@
 				E5D4CB762864363D007C0B3E /* UIImage+XMTool.swift */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		E5D4CB7E28643893007C0B3E /* XMBlast */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4CB7A28643822007C0B3E /* UIView+XMBlast.swift */,
+				E5D4CB7C28643887007C0B3E /* XMSBlastImage.xcassets */,
+			);
+			path = XMBlast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D4CB7D28643887007C0B3E /* XMSBlastImage.xcassets in Resources */,
 				E5D4CB6528640EC3007C0B3E /* LaunchScreen.storyboard in Resources */,
 				E5D4CB6228640EC3007C0B3E /* Assets.xcassets in Resources */,
 			);
@@ -184,6 +199,7 @@
 				E5D4CB7228641557007C0B3E /* UIView+XMTool.swift in Sources */,
 				E5D4CB6F28641208007C0B3E /* String+XMTool.swift in Sources */,
 				E5D4CB7428643556007C0B3E /* UIView+XMFrame.swift in Sources */,
+				E5D4CB7B28643822007C0B3E /* UIView+XMBlast.swift in Sources */,
 				E5D4CB5928640EC1007C0B3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
