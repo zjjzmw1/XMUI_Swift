@@ -2,7 +2,7 @@
 //  UIView+XMAnimation.swift
 //  XMUI_Swift
 //
-//  Created by ext.zhangmingwei1 on 2022/6/23.
+//  Created by 张明炜 on 2022/6/23.
 //
 
 import Foundation
@@ -50,7 +50,7 @@ extension UIView {
         let animati = CAKeyframeAnimation(keyPath: "transform.rotation")
         // rotation 旋转，需要添加弧度值
         // 角度转弧度
-        animati.values = [angle2Radion_XMS(angle: -50), angle2Radion_XMS(angle: 50), angle2Radion_XMS(angle: -50)]
+        animati.values = [angle2Radion(angle: -50), angle2Radion(angle: 50), angle2Radion(angle: -50)]
         if isRepeat {
             animati.repeatCount = MAXFLOAT
         } else {
@@ -58,7 +58,7 @@ extension UIView {
         }
         self.layer.add(animati, forKey: nil)
     }
-    func angle2Radion_XMS(angle: Float) -> Float {
+    func angle2Radion(angle: Float) -> Float {
         return angle / Float(180.0 * Double.pi)
     }
 
