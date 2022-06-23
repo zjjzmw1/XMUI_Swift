@@ -24,6 +24,7 @@
 		E5D4CB8928643FE7007C0B3E /* UIFont+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB8828643FE7007C0B3E /* UIFont+XMTool.swift */; };
 		E5D4CB8C286442E7007C0B3E /* XMPaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB8B286442E7007C0B3E /* XMPaddingLabel.swift */; };
 		E5D4CB8F2864455A007C0B3E /* XMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB8E2864455A007C0B3E /* XMNavigationController.swift */; };
+		E5D4CB922864460A007C0B3E /* UIScrollView+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB912864460A007C0B3E /* UIScrollView+XMTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		E5D4CB8828643FE7007C0B3E /* UIFont+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+XMTool.swift"; sourceTree = "<group>"; };
 		E5D4CB8B286442E7007C0B3E /* XMPaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPaddingLabel.swift; sourceTree = "<group>"; };
 		E5D4CB8E2864455A007C0B3E /* XMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMNavigationController.swift; sourceTree = "<group>"; };
+		E5D4CB912864460A007C0B3E /* UIScrollView+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+XMTool.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				E5D4CB82286439F6007C0B3E /* XMSizeMacro.swift */,
+				E5D4CB90286445F3007C0B3E /* UIScrollView */,
 				E5D4CB8D2864451D007C0B3E /* UINavigationController */,
 				E5D4CB8A286442B7007C0B3E /* UILabel */,
 				E5D4CB8728643FD6007C0B3E /* UIFont */,
@@ -180,6 +183,14 @@
 			path = UINavigationController;
 			sourceTree = "<group>";
 		};
+		E5D4CB90286445F3007C0B3E /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4CB912864460A007C0B3E /* UIScrollView+XMTool.swift */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,6 +270,7 @@
 				E5D4CB7428643556007C0B3E /* UIView+XMFrame.swift in Sources */,
 				E5D4CB8628643F0C007C0B3E /* UIColor+XMTool.swift in Sources */,
 				E5D4CB83286439F6007C0B3E /* XMSizeMacro.swift in Sources */,
+				E5D4CB922864460A007C0B3E /* UIScrollView+XMTool.swift in Sources */,
 				E5D4CB81286438DD007C0B3E /* UITableView+XMTool.swift in Sources */,
 				E5D4CB8928643FE7007C0B3E /* UIFont+XMTool.swift in Sources */,
 				E5D4CB8F2864455A007C0B3E /* XMNavigationController.swift in Sources */,
