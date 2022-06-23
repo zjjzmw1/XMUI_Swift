@@ -11,6 +11,8 @@
 		E5D4CB5D28640EC1007C0B3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB5C28640EC1007C0B3E /* ViewController.swift */; };
 		E5D4CB6228640EC3007C0B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D4CB6128640EC3007C0B3E /* Assets.xcassets */; };
 		E5D4CB6528640EC3007C0B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D4CB6328640EC3007C0B3E /* LaunchScreen.storyboard */; };
+		E5D4CB6F28641208007C0B3E /* String+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB6E28641208007C0B3E /* String+XMTool.swift */; };
+		E5D4CB7228641557007C0B3E /* UIView+XMTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB7128641557007C0B3E /* UIView+XMTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		E5D4CB6128640EC3007C0B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5D4CB6428640EC3007C0B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5D4CB6628640EC3007C0B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D4CB6E28641208007C0B3E /* String+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+XMTool.swift"; sourceTree = "<group>"; };
+		E5D4CB7128641557007C0B3E /* UIView+XMTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+XMTool.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +58,37 @@
 			children = (
 				E5D4CB5828640EC1007C0B3E /* AppDelegate.swift */,
 				E5D4CB5C28640EC1007C0B3E /* ViewController.swift */,
+				E5D4CB6C28641178007C0B3E /* XMUITool */,
 				E5D4CB6128640EC3007C0B3E /* Assets.xcassets */,
 				E5D4CB6328640EC3007C0B3E /* LaunchScreen.storyboard */,
 				E5D4CB6628640EC3007C0B3E /* Info.plist */,
 			);
 			path = XMUI_Swift;
+			sourceTree = "<group>";
+		};
+		E5D4CB6C28641178007C0B3E /* XMUITool */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4CB7028641543007C0B3E /* UIView */,
+				E5D4CB6D28641193007C0B3E /* String */,
+			);
+			path = XMUITool;
+			sourceTree = "<group>";
+		};
+		E5D4CB6D28641193007C0B3E /* String */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4CB6E28641208007C0B3E /* String+XMTool.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		E5D4CB7028641543007C0B3E /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E5D4CB7128641557007C0B3E /* UIView+XMTool.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5D4CB5D28640EC1007C0B3E /* ViewController.swift in Sources */,
+				E5D4CB7228641557007C0B3E /* UIView+XMTool.swift in Sources */,
+				E5D4CB6F28641208007C0B3E /* String+XMTool.swift in Sources */,
 				E5D4CB5928640EC1007C0B3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
