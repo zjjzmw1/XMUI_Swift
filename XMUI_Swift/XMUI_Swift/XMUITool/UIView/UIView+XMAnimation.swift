@@ -63,6 +63,17 @@ extension UIView: CAAnimationDelegate {
     func angle2Radion(angle: Float) -> Float {
         return angle / Float(180.0 * Double.pi)
     }
+    
+    // MARK: - 上下浮动动画
+    /// 上下浮动动画
+    func floatAnimation() {
+        let basicAnimation : CABasicAnimation = CABasicAnimation(keyPath: "transform.translation.y")
+        basicAnimation.duration = 0.25
+        basicAnimation.fromValue = NSNumber(value: -5)
+        basicAnimation.toValue = NSNumber(value: 5)
+        basicAnimation.autoreverses = true
+        self.layer.add(basicAnimation, forKey: "floatAnimation")
+    }
 
     //MARK: - 抛物线动画
     typealias animationFinishedBlock = (_ finish : Bool) -> Void

@@ -34,6 +34,14 @@ class DemoAnimationVC: UIViewController {
         return v
     }()
     
+    lazy var testView4: UIView = {
+        let v = UIView.init()
+        v.backgroundColor = UIColor.red
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(testAnimation4))
+        v.addGestureRecognizer(tap)
+        return v
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "UIView+XMAnimation"
@@ -47,6 +55,9 @@ class DemoAnimationVC: UIViewController {
         
         self.view.addSubview(testView3)
         testView3.frame = CGRect.init(x: 50, y: 220, width: 80, height: 80)
+        
+        self.view.addSubview(testView4)
+        testView4.frame = CGRect.init(x: 200, y: 220, width: 80, height: 80)
 
     }
     
@@ -64,5 +75,7 @@ class DemoAnimationVC: UIViewController {
         testView3.moveAnimation(duration: 2.0, from: testView3.frame, to: CGRect.init(x: 200, y: 300, width: testView3.width, height: testView3.height), isRepeat: false)
     }
    
-
+    @objc func testAnimation4() {
+        testView4.floatAnimation()
+    }
 }
