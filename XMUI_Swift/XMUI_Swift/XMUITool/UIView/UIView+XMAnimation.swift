@@ -9,8 +9,9 @@ import Foundation
 import UIKit
 
 /// UIView 动画相关类目
-extension UIView {
+extension UIView: CAAnimationDelegate {
     
+    // MARK: - 移动动画
     /// 移动动画
     ///
     /// - Parameters:
@@ -41,6 +42,7 @@ extension UIView {
         self.layer.add(animation, forKey: "position") // key是可以随便定义的
     }
     
+    // MARK: - 抖动动画
     /// 原地抖动动画
     ///
     /// - Parameter delay: 延迟几秒后开始
@@ -62,4 +64,43 @@ extension UIView {
         return angle / Float(180.0 * Double.pi)
     }
 
+    //MARK: - 抛物线动画
+    typealias animationFinishedBlock = (_ finish : Bool) -> Void
+    /// 展示抛物线动画
+     func showParabolaAnimation(andFinishedRect finishPoint : CGPoint, andFinishBlock completion : @escaping animationFinishedBlock) -> Void{
+         let layer = CALayer()
+         layer.contents = self.layer.contents
+         layer.contentsGravity = CALayerContentsGravity.resize
+         layer.frame = self.frame
+     
+         let myWindow : UIView = ((UIApplication.shared.delegate?.window)!)!
+         myWindow.layer.addSublayer(layer)
+         //创建路径 其路径是抛物线
+         let path : UIBezierPath = UIBezierPath()
+         path.move(to: layer.position)
+         path.addQuadCurve(to: finishPoint, controlPoint:CGPoint(x: myWindow.frame.size.width/2, y: self.frame.origin.y - 40))
+         
+         //这里要使用组合动画 一个负责旋转，另一个负责曲线的运动
+         //创建 关键帧动画 负责曲线的运动
+         let pathAnimation : CAKeyframeAnimation = CAKeyframeAnimation(keyPath: "position")//位置的平移
+         pathAnimation.path = path.cgPath
+         //负责旋转 rotation
+         let basicAnimation = CABasicAnimation(keyPath: "transform.rotation")
+         basicAnimation.isRemovedOnCompletion = true
+         basicAnimation.fromValue = NSNumber(value: 0)
+         basicAnimation.toValue = NSNumber(value: 3 * 2 * Double.pi)//这里是旋转的角度 共是：3圈 （2 * M_PI）是一圈
+         basicAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
+         
+         //创建组合动画 主要是负责时间的相关设置 如下
+         let groups : CAAnimationGroup = CAAnimationGroup()
+         groups.animations = [pathAnimation,basicAnimation]
+         groups.duration = 1.5//国际单位制 S
+         groups.fillMode = CAMediaTimingFillMode.forwards
+         groups.isRemovedOnCompletion = true
+         groups.delegate = self
+         self.layer.add(groups, forKey: "groups")
+         completion(true)
+     }
+
+    
 }

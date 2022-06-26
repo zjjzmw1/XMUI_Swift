@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E52A042828685FFF00AFB040 /* DemoAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A042728685FFF00AFB040 /* DemoAnimationVC.swift */; };
 		E5D4CB5928640EC1007C0B3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB5828640EC1007C0B3E /* AppDelegate.swift */; };
 		E5D4CB5D28640EC1007C0B3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB5C28640EC1007C0B3E /* ViewController.swift */; };
 		E5D4CB6228640EC3007C0B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D4CB6128640EC3007C0B3E /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E52A042728685FFF00AFB040 /* DemoAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAnimationVC.swift; sourceTree = "<group>"; };
 		E5D4CB5528640EC1007C0B3E /* XMUI_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMUI_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D4CB5828640EC1007C0B3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5D4CB5C28640EC1007C0B3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				E5D4CBA128645186007C0B3E /* DemoBlastVC.swift */,
+				E52A042728685FFF00AFB040 /* DemoAnimationVC.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			files = (
 				E5D4CB772864363D007C0B3E /* UIImage+XMTool.swift in Sources */,
 				E5D4CB94286446B5007C0B3E /* XMToolMacro.swift in Sources */,
+				E52A042828685FFF00AFB040 /* DemoAnimationVC.swift in Sources */,
 				E5D4CB9D28644C8E007C0B3E /* DemoLabelVC.swift in Sources */,
 				E5D4CB7928643732007C0B3E /* UIView+XMAnimation.swift in Sources */,
 				E5D4CB97286447E7007C0B3E /* CLLocation+XMTool.swift in Sources */,
