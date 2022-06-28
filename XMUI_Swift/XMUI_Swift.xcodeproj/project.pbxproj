@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E52A042828685FFF00AFB040 /* DemoAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A042728685FFF00AFB040 /* DemoAnimationVC.swift */; };
+		E52A042B286ADCD800AFB040 /* XMToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A042A286ADCD800AFB040 /* XMToast.swift */; };
+		E52A042E286AE69300AFB040 /* DemoToastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A042D286AE69300AFB040 /* DemoToastVC.swift */; };
 		E5D4CB5928640EC1007C0B3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB5828640EC1007C0B3E /* AppDelegate.swift */; };
 		E5D4CB5D28640EC1007C0B3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4CB5C28640EC1007C0B3E /* ViewController.swift */; };
 		E5D4CB6228640EC3007C0B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D4CB6128640EC3007C0B3E /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		E52A042728685FFF00AFB040 /* DemoAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAnimationVC.swift; sourceTree = "<group>"; };
+		E52A042A286ADCD800AFB040 /* XMToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMToast.swift; sourceTree = "<group>"; };
+		E52A042D286AE69300AFB040 /* DemoToastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoToastVC.swift; sourceTree = "<group>"; };
 		E5D4CB5528640EC1007C0B3E /* XMUI_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMUI_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D4CB5828640EC1007C0B3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5D4CB5C28640EC1007C0B3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E52A0429286ADCC100AFB040 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				E52A042A286ADCD800AFB040 /* XMToast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		E52A042C286AE67700AFB040 /* XMToastVC */ = {
+			isa = PBXGroup;
+			children = (
+				E52A042D286AE69300AFB040 /* DemoToastVC.swift */,
+			);
+			path = XMToastVC;
+			sourceTree = "<group>";
+		};
 		E5D4CB4C28640EC1007C0B3E = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +126,7 @@
 			children = (
 				E5D4CB82286439F6007C0B3E /* XMSizeMacro.swift */,
 				E5D4CB93286446B5007C0B3E /* XMToolMacro.swift */,
+				E52A0429286ADCC100AFB040 /* Toast */,
 				E5D4CB95286447D8007C0B3E /* CLLocation */,
 				E5D4CB90286445F3007C0B3E /* UIScrollView */,
 				E5D4CB8D2864451D007C0B3E /* UINavigationController */,
@@ -215,6 +236,7 @@
 		E5D4CB9828644C54007C0B3E /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
+				E52A042C286AE67700AFB040 /* XMToastVC */,
 				E5D4CB9E2864514E007C0B3E /* UIView */,
 				E5D4CB9928644C61007C0B3E /* UILabel */,
 			);
@@ -315,6 +337,7 @@
 				E5D4CB9D28644C8E007C0B3E /* DemoLabelVC.swift in Sources */,
 				E5D4CB7928643732007C0B3E /* UIView+XMAnimation.swift in Sources */,
 				E5D4CB97286447E7007C0B3E /* CLLocation+XMTool.swift in Sources */,
+				E52A042B286ADCD800AFB040 /* XMToast.swift in Sources */,
 				E5D4CB5D28640EC1007C0B3E /* ViewController.swift in Sources */,
 				E5D4CB7228641557007C0B3E /* UIView+XMTool.swift in Sources */,
 				E5D4CB6F28641208007C0B3E /* String+XMTool.swift in Sources */,
@@ -325,6 +348,7 @@
 				E5D4CB81286438DD007C0B3E /* UITableView+XMTool.swift in Sources */,
 				E5D4CB8928643FE7007C0B3E /* UIFont+XMTool.swift in Sources */,
 				E5D4CB8F2864455A007C0B3E /* XMNavigationController.swift in Sources */,
+				E52A042E286AE69300AFB040 /* DemoToastVC.swift in Sources */,
 				E5D4CB7B28643822007C0B3E /* UIView+XMBlast.swift in Sources */,
 				E5D4CBA228645186007C0B3E /* DemoBlastVC.swift in Sources */,
 				E5D4CB8C286442E7007C0B3E /* XMPaddingLabel.swift in Sources */,

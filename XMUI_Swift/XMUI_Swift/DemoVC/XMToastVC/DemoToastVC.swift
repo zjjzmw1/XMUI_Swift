@@ -1,13 +1,14 @@
 //
-//  ViewController.swift
+//  DemoToastVC.swift
 //  XMUI_Swift
 //
-//  Created by 张明炜 on 2022/6/23.
+//  Created by ext.zhangmingwei1 on 2022/6/28.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+/// Toast demo
+class DemoToastVC: UIViewController {
 
     lazy var tableView: UITableView = {
         let tableV = UITableView.getInstanceTableView(frame: CGRect.init(x: 0, y: kNavigationStatusbarHeight, width: kScreenWidth, height: kScreenHeight - kNavigationStatusbarHeight))
@@ -16,20 +17,21 @@ class ViewController: UIViewController {
         return tableV
     }()
     
-    let dataArr = ["XMPaddingLabel","DemoBlastVC","DemoAnimationVC","DemoToastVC"]
+    let dataArr = ["居中-短文","居中长文-逻辑阿萨德；高科技爱斯达克老规矩科利达；几个号卡戴珊；就广发卡拉斯；估计","底部-短文","底部-长文塞德里克老规矩；卡拉多；结果考虑打几个；蓝卡队如何寄过来的看法较高的萨"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        self.navigationItem.title = "首页"
+        self.navigationItem.title = "XMToast"
 
         self.view.addSubview(self.tableView)
     }
 
+
 }
 
 // MARK: - 表格代理
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension DemoToastVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataArr.count
@@ -51,25 +53,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
 
         var currentStr = ""
-        var vc = UIViewController()
         if self.dataArr.count > indexPath.row {
             currentStr = self.dataArr[indexPath.row]
         }
         
-        if currentStr == "XMPaddingLabel" {
-            vc = DemoLabelVC()
-        }
-        if currentStr == "DemoBlastVC" {
-            vc = DemoBlastVC()
-        }
-        if currentStr == "DemoAnimationVC" {
-            vc = DemoAnimationVC()
-        }
-        if currentStr == "DemoToastVC" {
-            vc = DemoToastVC()
+        if indexPath.row <= 1 {
+            XMToast.showText(text: currentStr)
+        } else {
+            XMToast.showText(text: currentStr, positionType: .bottom)
         }
 
-        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }
